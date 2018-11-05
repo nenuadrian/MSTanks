@@ -1,5 +1,5 @@
 # MSTanks
-MS Hackathon project for GUTS Hackathon 2018
+HackSoc hackathon challenge
 
 ## Description
 
