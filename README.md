@@ -3,7 +3,7 @@ HackSoc hackathon challenge
 
 ## Description
 
-Contains all the materials required to take part in the MS challenge for GUTS 2018.
+Contains all the materials required to take part in the MS challenge
 
 ## Contents
 
