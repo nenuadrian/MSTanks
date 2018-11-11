@@ -147,10 +147,10 @@ class ServerComms(object):
 		return self.ServerSocket.send(message)
 #COMMMEEMENT METHOD TO CALCULATE HEADING
 def GetHeading(x1,y1,x2,y2):
-    heading = (float)(math.atan2(y2-y1,x2-x1))
-    heading = (float)(heading*(180.0/math.pi))
-    heading = math.fmod(360 - heading, 360)
-    return abs(heading)
+	heading = (float)(math.atan2(y2-y1,x2-x1))
+	heading = (float)(heading*(180.0/math.pi))
+	heading = math.fmod(360 - heading, 360)
+	return abs(heading)
 
 
 # Parse command line args
@@ -206,7 +206,7 @@ while True:
 				tankMunition = message.get("Ammo")
 	if int(round(time.time() * 1000)) - control >= 1000:
 		control = int(round(time.time() * 1000))
-        GameServer.sendMessage(ServerMessageTypes.TURNTOHEADING, {'Amount': GetHeading(tankX,tankY,0,0)})
-        GameServer.sendMessage(ServerMessageTypes.MOVEFORWARDDISTANCE, {'Amount': 50})
+		GameServer.sendMessage(ServerMessageTypes.TURNTOHEADING, {'Amount': GetHeading(tankX,tankY,0,0)})
+		GameServer.sendMessage(ServerMessageTypes.MOVEFORWARDDISTANCE, {'Amount': 50})
 
 
